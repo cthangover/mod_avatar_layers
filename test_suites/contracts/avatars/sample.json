@@ -1,0 +1,62 @@
+{
+  "Kind": "avatar",
+  "Items": [
+    {
+      "Id": "avatar_layers_contracts/sample",
+      "Renderer": "layers",
+      "BaseValues": {
+        "canvas": {
+          "Width": 4,
+          "Height": 4
+        },
+        "layers/body": {
+          "Image": "test/body.png",
+          "Order": 0
+        }
+      },
+      "Groups": {
+        "eyes_state": {
+          "Default": "opened",
+          "Presets": {
+            "opened": {
+              "Values": {
+                "layers/eyes": {
+                  "Image": "test/opened.png",
+                  "Order": 10,
+                  "X": 1,
+                  "Y": 1,
+                  "Width": 2,
+                  "Height": 2
+                }
+              }
+            },
+            "closed": {
+              "Values": {
+                "layers/eyes": {
+                  "Image": "test/closed.png",
+                  "Order": 10,
+                  "X": 1,
+                  "Y": 1,
+                  "Width": 2,
+                  "Height": 2
+                }
+              }
+            },
+            "absent": {
+              "Values": {
+                "layers/eyes": null
+              }
+            },
+            "hidden": {
+              "Values": {
+                "layers/eyes": {
+                  "Visible": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

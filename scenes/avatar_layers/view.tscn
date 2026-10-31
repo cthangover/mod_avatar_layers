@@ -1,0 +1,7 @@
+[gd_scene format=3]
+
+[node name="LayeredAvatar" type="Control"]
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 1024.0
+mouse_filter = 2
