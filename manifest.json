@@ -1,7 +1,7 @@
 {
   "id": "avatar_layers",
   "name": "Layered Avatars",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": "ct",
   "description": "Layered PNG avatar renderer: preset-controlled images, ordering, placement, visibility and opacity.",
   "category": "engine, visual",
@@ -12,7 +12,7 @@
     "tests/*.cs"
   ],
   "depends": [
-    "avatar_base>=1"
+    "avatar_base>=0.1.0"
   ],
   "test_suites": [
     {

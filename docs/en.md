@@ -1,7 +1,7 @@
 # Layered avatar renderer
 
 `avatar_layers` implements `IAvatarRenderer` from `avatar_base`, registered as `layers` through
-`LayeredAvatarRendererFactory`. Content mods depend on `avatar_layers>=1`; no dependency on
+`LayeredAvatarRendererFactory`. Content mods depend on `avatar_layers>=0.1.0`; no dependency on
 `characters_base`, `dialog_base` or Live2D is required.
 
 This is a working discrete renderer, not a character-art generator. Authors supply aligned PNG
@@ -12,7 +12,7 @@ layers and a `Kind: avatar` definition. For preset semantics and save state see
 
 ```text
 my_content/
-  manifest.json                       depends: ["avatar_layers>=1"]
+  manifest.json                       depends: ["avatar_layers>=0.1.0"]
   avatars/marao.json                   Kind: avatar, Renderer: layers
   avatar_layers/marao/body.png
   avatar_layers/marao/eyes_opened.png

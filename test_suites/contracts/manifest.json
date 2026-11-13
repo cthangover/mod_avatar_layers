@@ -1,10 +1,10 @@
 {
   "id": "avatar_layers__contracts",
   "name": "Layered avatar rendering contracts",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": "ct",
   "depends": [
-    "avatar_layers>=1"
+    "avatar_layers>=0.1.0"
   ],
   "test_sources": [
     "tests/*.cs"

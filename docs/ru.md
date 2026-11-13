@@ -1,7 +1,7 @@
 # Аватары из PNG-слоёв
 
 `avatar_layers` — рабочая реализация `IAvatarRenderer` с идентификатором `layers`.
-Контентный мод зависит от `avatar_layers>=1`, объявляет сущность `Kind: avatar` с
+Контентный мод зависит от `avatar_layers>=0.1.0`, объявляет сущность `Kind: avatar` с
 `Renderer: layers` и кладёт прозрачные PNG в свою папку `avatar_layers/`.
 
 [Полный формат и пример ресурса](en.md).
