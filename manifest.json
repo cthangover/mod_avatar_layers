@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": "ct",
   "description": "Layered PNG avatar renderer: preset-controlled images, ordering, placement, visibility and opacity.",
-  "category": "engine, visual",
+  "categories": ["engine", "visual"],
   "sources": [
     "src/**/*.cs"
   ],
