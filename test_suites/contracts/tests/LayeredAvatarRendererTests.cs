@@ -99,7 +99,7 @@ namespace Cthangover.Mods.AvatarLayers.Contracts
         [ModTest("avatar_layers/rendered_pixels_follow_preset", TimeoutSeconds = 15)]
         public static async Task Pixels(ModTestContext ctx)
         {
-            var tree = (SceneTree)Engine.GetMainLoop();
+            var tree = (SceneTree)Godot.Engine.GetMainLoop();
             var viewport = new SubViewport { Size = new Vector2I(4, 4), TransparentBg = true,
                 Disable3D = true, RenderTargetUpdateMode = SubViewport.UpdateMode.Always };
             var avatar = AvatarCatalog.Create("avatar_layers_contracts/sample");
