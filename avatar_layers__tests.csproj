@@ -619,6 +619,13 @@
       <HintPath>$(CthangoverRoot).ide/bin/navigation3d_base/$(Configuration)/net10.0/navigation3d_base.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/navigation3d_base/integrations/editor/navigation3d_base__editor.csproj" Condition="Exists('$(CthangoverRoot)mods_private/navigation3d_base/integrations/editor/navigation3d_base__editor.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="navigation3d_base__editor" Condition="!Exists('$(CthangoverRoot)mods_private/navigation3d_base/integrations/editor/navigation3d_base__editor.csproj') And Exists('$(CthangoverRoot).ide/bin/navigation3d_base__editor/$(Configuration)/net10.0/navigation3d_base__editor.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/navigation3d_base__editor/$(Configuration)/net10.0/navigation3d_base__editor.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <ProjectReference Include="$(CthangoverRoot)mods_private/navigation3d_base/integrations/routines/navigation3d_base__routines.csproj" Condition="Exists('$(CthangoverRoot)mods_private/navigation3d_base/integrations/routines/navigation3d_base__routines.csproj')">
       <Private>false</Private>
     </ProjectReference>
@@ -794,11 +801,39 @@
       <HintPath>$(CthangoverRoot).ide/bin/scene3d_base__dialogs/$(Configuration)/net10.0/scene3d_base__dialogs.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/scene3d_base/integrations/instance_interactions/scene3d_base__instance_interactions.csproj" Condition="Exists('$(CthangoverRoot)mods_private/scene3d_base/integrations/instance_interactions/scene3d_base__instance_interactions.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="scene3d_base__instance_interactions" Condition="!Exists('$(CthangoverRoot)mods_private/scene3d_base/integrations/instance_interactions/scene3d_base__instance_interactions.csproj') And Exists('$(CthangoverRoot).ide/bin/scene3d_base__instance_interactions/$(Configuration)/net10.0/scene3d_base__instance_interactions.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/scene3d_base__instance_interactions/$(Configuration)/net10.0/scene3d_base__instance_interactions.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/scene3d_base/integrations/instance_inventory/scene3d_base__instance_inventory.csproj" Condition="Exists('$(CthangoverRoot)mods_private/scene3d_base/integrations/instance_inventory/scene3d_base__instance_inventory.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="scene3d_base__instance_inventory" Condition="!Exists('$(CthangoverRoot)mods_private/scene3d_base/integrations/instance_inventory/scene3d_base__instance_inventory.csproj') And Exists('$(CthangoverRoot).ide/bin/scene3d_base__instance_inventory/$(Configuration)/net10.0/scene3d_base__instance_inventory.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/scene3d_base__instance_inventory/$(Configuration)/net10.0/scene3d_base__instance_inventory.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/scene3d_base/integrations/instance_pickups/scene3d_base__instance_pickups.csproj" Condition="Exists('$(CthangoverRoot)mods_private/scene3d_base/integrations/instance_pickups/scene3d_base__instance_pickups.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="scene3d_base__instance_pickups" Condition="!Exists('$(CthangoverRoot)mods_private/scene3d_base/integrations/instance_pickups/scene3d_base__instance_pickups.csproj') And Exists('$(CthangoverRoot).ide/bin/scene3d_base__instance_pickups/$(Configuration)/net10.0/scene3d_base__instance_pickups.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/scene3d_base__instance_pickups/$(Configuration)/net10.0/scene3d_base__instance_pickups.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <ProjectReference Include="$(CthangoverRoot)mods_private/scene3d_editor/scene3d_editor.csproj" Condition="Exists('$(CthangoverRoot)mods_private/scene3d_editor/scene3d_editor.csproj')">
       <Private>false</Private>
     </ProjectReference>
     <Reference Include="scene3d_editor" Condition="!Exists('$(CthangoverRoot)mods_private/scene3d_editor/scene3d_editor.csproj') And Exists('$(CthangoverRoot).ide/bin/scene3d_editor/$(Configuration)/net10.0/scene3d_editor.dll')">
       <HintPath>$(CthangoverRoot).ide/bin/scene3d_editor/$(Configuration)/net10.0/scene3d_editor.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/scene3d_editor/integrations/instance_inventory/scene3d_editor__instance_inventory.csproj" Condition="Exists('$(CthangoverRoot)mods_private/scene3d_editor/integrations/instance_inventory/scene3d_editor__instance_inventory.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="scene3d_editor__instance_inventory" Condition="!Exists('$(CthangoverRoot)mods_private/scene3d_editor/integrations/instance_inventory/scene3d_editor__instance_inventory.csproj') And Exists('$(CthangoverRoot).ide/bin/scene3d_editor__instance_inventory/$(Configuration)/net10.0/scene3d_editor__instance_inventory.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/scene3d_editor__instance_inventory/$(Configuration)/net10.0/scene3d_editor__instance_inventory.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <ProjectReference Include="$(CthangoverRoot)mods/scene_builder/scene_builder.csproj" Condition="Exists('$(CthangoverRoot)mods/scene_builder/scene_builder.csproj')">
@@ -1371,6 +1406,9 @@
     <Reference Include="../../mods_private/navigation3d_base/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
       <Private>false</Private>
     </Reference>
+    <Reference Include="../../mods_private/navigation3d_base/integrations/editor/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
     <Reference Include="../../mods_private/navigation3d_base/integrations/routines/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
       <Private>false</Private>
     </Reference>
@@ -1446,7 +1484,19 @@
     <Reference Include="../../mods_private/scene3d_base/integrations/dialogs/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
       <Private>false</Private>
     </Reference>
+    <Reference Include="../../mods_private/scene3d_base/integrations/instance_interactions/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="../../mods_private/scene3d_base/integrations/instance_inventory/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="../../mods_private/scene3d_base/integrations/instance_pickups/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
     <Reference Include="../../mods_private/scene3d_editor/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="../../mods_private/scene3d_editor/integrations/instance_inventory/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
       <Private>false</Private>
     </Reference>
     <Reference Include="../scene_builder/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
