@@ -381,6 +381,20 @@
       <HintPath>$(CthangoverRoot).ide/bin/fog2d_editor/$(Configuration)/net10.0/fog2d_editor.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/foraging3d/foraging3d.csproj" Condition="Exists('$(CthangoverRoot)mods_private/foraging3d/foraging3d.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="foraging3d" Condition="!Exists('$(CthangoverRoot)mods_private/foraging3d/foraging3d.csproj') And Exists('$(CthangoverRoot).ide/bin/foraging3d/$(Configuration)/net10.0/foraging3d.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/foraging3d/$(Configuration)/net10.0/foraging3d.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/gloom/gloom.csproj" Condition="Exists('$(CthangoverRoot)mods_private/gloom/gloom.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="gloom" Condition="!Exists('$(CthangoverRoot)mods_private/gloom/gloom.csproj') And Exists('$(CthangoverRoot).ide/bin/gloom/$(Configuration)/net10.0/gloom.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/gloom/$(Configuration)/net10.0/gloom.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <ProjectReference Include="$(CthangoverRoot)mods_private/graphics3d_base/graphics3d_base.csproj" Condition="Exists('$(CthangoverRoot)mods_private/graphics3d_base/graphics3d_base.csproj')">
       <Private>false</Private>
     </ProjectReference>
@@ -610,6 +624,20 @@
     </ProjectReference>
     <Reference Include="my_novel_game" Condition="!Exists('$(CthangoverRoot)mods/my_novel_game/my_novel_game.csproj') And Exists('$(CthangoverRoot).ide/bin/my_novel_game/$(Configuration)/net10.0/my_novel_game.dll')">
       <HintPath>$(CthangoverRoot).ide/bin/my_novel_game/$(Configuration)/net10.0/my_novel_game.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/nature_base/nature_base.csproj" Condition="Exists('$(CthangoverRoot)mods_private/nature_base/nature_base.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="nature_base" Condition="!Exists('$(CthangoverRoot)mods_private/nature_base/nature_base.csproj') And Exists('$(CthangoverRoot).ide/bin/nature_base/$(Configuration)/net10.0/nature_base.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/nature_base/$(Configuration)/net10.0/nature_base.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/nature_base/integrations/scene/nature_base__scene.csproj" Condition="Exists('$(CthangoverRoot)mods_private/nature_base/integrations/scene/nature_base__scene.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="nature_base__scene" Condition="!Exists('$(CthangoverRoot)mods_private/nature_base/integrations/scene/nature_base__scene.csproj') And Exists('$(CthangoverRoot).ide/bin/nature_base__scene/$(Configuration)/net10.0/nature_base__scene.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/nature_base__scene/$(Configuration)/net10.0/nature_base__scene.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <ProjectReference Include="$(CthangoverRoot)mods_private/navigation3d_base/navigation3d_base.csproj" Condition="Exists('$(CthangoverRoot)mods_private/navigation3d_base/navigation3d_base.csproj')">
@@ -934,6 +962,20 @@
       <HintPath>$(CthangoverRoot).ide/bin/stats_base/$(Configuration)/net10.0/stats_base.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/temperate_plants_pack/temperate_plants_pack.csproj" Condition="Exists('$(CthangoverRoot)mods_private/temperate_plants_pack/temperate_plants_pack.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="temperate_plants_pack" Condition="!Exists('$(CthangoverRoot)mods_private/temperate_plants_pack/temperate_plants_pack.csproj') And Exists('$(CthangoverRoot).ide/bin/temperate_plants_pack/$(Configuration)/net10.0/temperate_plants_pack.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/temperate_plants_pack/$(Configuration)/net10.0/temperate_plants_pack.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/temperate_plants_pack/integrations/terrain/temperate_plants_pack__terrain.csproj" Condition="Exists('$(CthangoverRoot)mods_private/temperate_plants_pack/integrations/terrain/temperate_plants_pack__terrain.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="temperate_plants_pack__terrain" Condition="!Exists('$(CthangoverRoot)mods_private/temperate_plants_pack/integrations/terrain/temperate_plants_pack__terrain.csproj') And Exists('$(CthangoverRoot).ide/bin/temperate_plants_pack__terrain/$(Configuration)/net10.0/temperate_plants_pack__terrain.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/temperate_plants_pack__terrain/$(Configuration)/net10.0/temperate_plants_pack__terrain.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <ProjectReference Include="$(CthangoverRoot)mods_private/terrain_base/terrain_base.csproj" Condition="Exists('$(CthangoverRoot)mods_private/terrain_base/terrain_base.csproj')">
       <Private>false</Private>
     </ProjectReference>
@@ -976,11 +1018,25 @@
       <HintPath>$(CthangoverRoot).ide/bin/terrain_base__vegetation_weather/$(Configuration)/net10.0/terrain_base__vegetation_weather.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/terrain_base/integrations/water/terrain_base__water.csproj" Condition="Exists('$(CthangoverRoot)mods_private/terrain_base/integrations/water/terrain_base__water.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="terrain_base__water" Condition="!Exists('$(CthangoverRoot)mods_private/terrain_base/integrations/water/terrain_base__water.csproj') And Exists('$(CthangoverRoot).ide/bin/terrain_base__water/$(Configuration)/net10.0/terrain_base__water.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/terrain_base__water/$(Configuration)/net10.0/terrain_base__water.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <ProjectReference Include="$(CthangoverRoot)mods_private/terrain_editor/terrain_editor.csproj" Condition="Exists('$(CthangoverRoot)mods_private/terrain_editor/terrain_editor.csproj')">
       <Private>false</Private>
     </ProjectReference>
     <Reference Include="terrain_editor" Condition="!Exists('$(CthangoverRoot)mods_private/terrain_editor/terrain_editor.csproj') And Exists('$(CthangoverRoot).ide/bin/terrain_editor/$(Configuration)/net10.0/terrain_editor.dll')">
       <HintPath>$(CthangoverRoot).ide/bin/terrain_editor/$(Configuration)/net10.0/terrain_editor.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/terrain_editor/integrations/scene3d/terrain_editor__scene3d.csproj" Condition="Exists('$(CthangoverRoot)mods_private/terrain_editor/integrations/scene3d/terrain_editor__scene3d.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="terrain_editor__scene3d" Condition="!Exists('$(CthangoverRoot)mods_private/terrain_editor/integrations/scene3d/terrain_editor__scene3d.csproj') And Exists('$(CthangoverRoot).ide/bin/terrain_editor__scene3d/$(Configuration)/net10.0/terrain_editor__scene3d.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/terrain_editor__scene3d/$(Configuration)/net10.0/terrain_editor__scene3d.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <ProjectReference Include="$(CthangoverRoot)mods_private/test_scene3d_lifecycle/test_scene3d_lifecycle.csproj" Condition="Exists('$(CthangoverRoot)mods_private/test_scene3d_lifecycle/test_scene3d_lifecycle.csproj')">
@@ -1072,6 +1128,34 @@
     </ProjectReference>
     <Reference Include="validator" Condition="!Exists('$(CthangoverRoot)mods/validator/validator.csproj') And Exists('$(CthangoverRoot).ide/bin/validator/$(Configuration)/net10.0/validator.dll')">
       <HintPath>$(CthangoverRoot).ide/bin/validator/$(Configuration)/net10.0/validator.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/vegetation3d_base/vegetation3d_base.csproj" Condition="Exists('$(CthangoverRoot)mods_private/vegetation3d_base/vegetation3d_base.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="vegetation3d_base" Condition="!Exists('$(CthangoverRoot)mods_private/vegetation3d_base/vegetation3d_base.csproj') And Exists('$(CthangoverRoot).ide/bin/vegetation3d_base/$(Configuration)/net10.0/vegetation3d_base.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/vegetation3d_base/$(Configuration)/net10.0/vegetation3d_base.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/vegetation3d_base/integrations/scene/vegetation3d_base__scene.csproj" Condition="Exists('$(CthangoverRoot)mods_private/vegetation3d_base/integrations/scene/vegetation3d_base__scene.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="vegetation3d_base__scene" Condition="!Exists('$(CthangoverRoot)mods_private/vegetation3d_base/integrations/scene/vegetation3d_base__scene.csproj') And Exists('$(CthangoverRoot).ide/bin/vegetation3d_base__scene/$(Configuration)/net10.0/vegetation3d_base__scene.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/vegetation3d_base__scene/$(Configuration)/net10.0/vegetation3d_base__scene.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/vegetation3d_base/integrations/weather/vegetation3d_base__weather.csproj" Condition="Exists('$(CthangoverRoot)mods_private/vegetation3d_base/integrations/weather/vegetation3d_base__weather.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="vegetation3d_base__weather" Condition="!Exists('$(CthangoverRoot)mods_private/vegetation3d_base/integrations/weather/vegetation3d_base__weather.csproj') And Exists('$(CthangoverRoot).ide/bin/vegetation3d_base__weather/$(Configuration)/net10.0/vegetation3d_base__weather.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/vegetation3d_base__weather/$(Configuration)/net10.0/vegetation3d_base__weather.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <ProjectReference Include="$(CthangoverRoot)mods_private/vegetation3d_editor/vegetation3d_editor.csproj" Condition="Exists('$(CthangoverRoot)mods_private/vegetation3d_editor/vegetation3d_editor.csproj')">
+      <Private>false</Private>
+    </ProjectReference>
+    <Reference Include="vegetation3d_editor" Condition="!Exists('$(CthangoverRoot)mods_private/vegetation3d_editor/vegetation3d_editor.csproj') And Exists('$(CthangoverRoot).ide/bin/vegetation3d_editor/$(Configuration)/net10.0/vegetation3d_editor.dll')">
+      <HintPath>$(CthangoverRoot).ide/bin/vegetation3d_editor/$(Configuration)/net10.0/vegetation3d_editor.dll</HintPath>
       <Private>false</Private>
     </Reference>
     <ProjectReference Include="$(CthangoverRoot)mods/village_pack/village_pack.csproj" Condition="Exists('$(CthangoverRoot)mods/village_pack/village_pack.csproj')">
@@ -1304,6 +1388,12 @@
     <Reference Include="../fog2d_editor/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
       <Private>false</Private>
     </Reference>
+    <Reference Include="../../mods_private/foraging3d/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="../../mods_private/gloom/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
     <Reference Include="../../mods_private/graphics3d_base/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
       <Private>false</Private>
     </Reference>
@@ -1401,6 +1491,12 @@
       <Private>false</Private>
     </Reference>
     <Reference Include="../my_novel_game/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="../../mods_private/nature_base/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="../../mods_private/nature_base/integrations/scene/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
       <Private>false</Private>
     </Reference>
     <Reference Include="../../mods_private/navigation3d_base/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
@@ -1541,6 +1637,12 @@
     <Reference Include="../stats_base/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
       <Private>false</Private>
     </Reference>
+    <Reference Include="../../mods_private/temperate_plants_pack/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="../../mods_private/temperate_plants_pack/integrations/terrain/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
     <Reference Include="../../mods_private/terrain_base/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
       <Private>false</Private>
     </Reference>
@@ -1559,7 +1661,13 @@
     <Reference Include="../../mods_private/terrain_base/integrations/vegetation_weather/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
       <Private>false</Private>
     </Reference>
+    <Reference Include="../../mods_private/terrain_base/integrations/water/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
     <Reference Include="../../mods_private/terrain_editor/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="../../mods_private/terrain_editor/integrations/scene3d/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
       <Private>false</Private>
     </Reference>
     <Reference Include="../../mods_private/test_scene3d_lifecycle/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
@@ -1599,6 +1707,18 @@
       <Private>false</Private>
     </Reference>
     <Reference Include="../validator/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="../../mods_private/vegetation3d_base/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="../../mods_private/vegetation3d_base/integrations/scene/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="../../mods_private/vegetation3d_base/integrations/weather/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="../../mods_private/vegetation3d_editor/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
       <Private>false</Private>
     </Reference>
     <Reference Include="../village_pack/dll/**/*.dll" Exclude="$(CthangoverSourceBinaryExcludes)">
